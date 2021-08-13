@@ -1,5 +1,6 @@
-import { foreach } from "../each.js";
+import { problem1 } from "../each.js";
+const items = [1,2,3,4,5];
 
-const items = [1, 2, 3, 4, 5, 5];
 
-console.log(foreach(items));
+
+problem1(items, function call(value, index){console.log({value, index})});

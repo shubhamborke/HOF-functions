@@ -1,13 +1,8 @@
-const foreach = function each(arr){
-    for(let i = 0; i < arr.length; i++){
-        cb(arr[i], i);
-    }
+const problem1 = function each(elements, cb){
+
+for(let i = 0; i < elements.length; i++){
+    cb(elements[i], i)
+}
 }
 
-function cb(value, index){
-    console.log({index, value});
-}
-
-let list = [1,2,3,4,5];
-
-export { foreach }
+export { problem1 }
