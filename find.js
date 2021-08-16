@@ -1,14 +1,9 @@
-const problem3 = function findval(elements,find){
-    let arr = [];
+const problem3 = function findval(elements,cb){
     for(let i = 0 ; i < elements.length; i++){
-        cb(elements[i], find);
-    }
-    function cb(element , value){
-        if(element === value){
-            arr.push(value);
+        if(cb(elements[i]) === true){
+            return elements[i];
         }
     }
-    console.log(arr);
 }
 
 export { problem3 }
